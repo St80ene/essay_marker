@@ -10,7 +10,7 @@ const App = () => {
   };
 
   return (
-    <div className='w-[70%] text-white m-auto p-3 h-full flex flex-col items-center justify-center'>
+    <div className='w-[70%] m-auto p-3 h-full flex flex-col items-center justify-center'>
       <h2 className='text-white font-bold text-[2rem]'>Essay Marker</h2>
       <EssayMarkerForm onResult={handleResult} />
       {result && <EssayResult result={result} />}
