@@ -70,6 +70,7 @@ const EssayMarkerForm = ({ onResult }: { onResult: any }) => {
       onResult(result);
       form.reset();
     } catch (err) {
+      // @ts-ignore
       setError(err.message || 'An unexpected error occurred.');
     } finally {
       setLoading(false);
