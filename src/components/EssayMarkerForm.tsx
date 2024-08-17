@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import CustomInput from './CustomInput';
 
-const { VITE_AUTOGON_API_KEY } = import.meta.env;
+const { VITE_VERCEL_ENV } = import.meta.env;
 
 interface IState {
   question: string;
@@ -46,6 +46,8 @@ const EssayMarkerForm = ({ onResult }: { onResult: any }) => {
       required_number_of_words: parseInt(requiredWordCount, 10),
     };
 
+    console.log({ VITE_VERCEL_ENV });
+
     try {
       const response = await fetch(
         'https://api.autogon.ai/api/v1/services/essay-marker/',
@@ -53,7 +55,7 @@ const EssayMarkerForm = ({ onResult }: { onResult: any }) => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'X-AUG-KEY': VITE_AUTOGON_API_KEY,
+            'X-AUG-KEY': VITE_VERCEL_ENV,
           },
           body: JSON.stringify(payload),
         }
