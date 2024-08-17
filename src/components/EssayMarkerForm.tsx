@@ -68,6 +68,7 @@ const EssayMarkerForm = ({ onResult }: { onResult: any }) => {
       console.log('result', result);
       setState(initialState);
       onResult(result);
+      // @ts-ignore
       form.reset();
     } catch (err) {
       // @ts-ignore
