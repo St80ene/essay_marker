@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import CustomInput from './CustomInput';
 
-const { VITE_VERCEL_ENV } = import.meta.env;
+const { VITE_AUTOGON_AI_API_KEY } = import.meta.env;
 
 interface IState {
   question: string;
@@ -46,7 +46,7 @@ const EssayMarkerForm = ({ onResult }: { onResult: any }) => {
       required_number_of_words: parseInt(requiredWordCount, 10),
     };
 
-    console.log({ VITE_VERCEL_ENV });
+    console.log({ VITE_AUTOGON_AI_API_KEY });
 
     try {
       const response = await fetch(
@@ -55,7 +55,7 @@ const EssayMarkerForm = ({ onResult }: { onResult: any }) => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'X-AUG-KEY': VITE_VERCEL_ENV,
+            'X-AUG-KEY': VITE_AUTOGON_AI_API_KEY,
           },
           body: JSON.stringify(payload),
         }
