@@ -1,2 +1,2 @@
-# exercise_bot
-Exercise Bot is a smart, AI-driven chatbot designed to provide users with instant exercise recommendations and fitness tips based on their preferences and workout history.
+# Essay Marker
+Essay Marker is an AI-powered application integrated with AutoGon AI, designed to revolutionize the way educators evaluate student essays. By leveraging AutoGon AI's advanced language processing and analysis capabilities, Essay Marker offers precise grading, detailed feedback, and personalized suggestions for improvement. This smart tool not only automates the grading process but also ensures consistency and fairness, making it an invaluable resource for educators. With Essay Marker, students receive actionable insights to enhance their writing, while teachers benefit from a more efficient and reliable assessment process.
