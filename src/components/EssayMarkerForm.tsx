@@ -46,8 +46,6 @@ const EssayMarkerForm = ({ onResult }: { onResult: any }) => {
       required_number_of_words: parseInt(requiredWordCount, 10),
     };
 
-    console.log({ VITE_AUTOGON_AI_API_KEY });
-
     try {
       const response = await fetch(
         'https://api.autogon.ai/api/v1/services/essay-marker/',
